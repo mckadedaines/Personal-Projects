@@ -1,0 +1,84 @@
+body {
+    text-align: center;
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    min-height: 100vh;
+    margin: 0;
+}
+#list_container {
+    width: 600px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightgreen;
+    color: white;
+    border-radius: 30px;
+    border-color: black;
+    border-style: solid;
+    border-width: 3px;
+}
+input {
+    height: 30px;
+    width: 50%;
+    border-radius: 30px;
+    border-color: #9370DB;
+    border-style: solid;
+    background-color: lightgray;
+}
+#add_task_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100vb;
+}
+#submit_button {
+    width: 25%;
+    height: 40px;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: #9370DB;
+    color: white;
+    border-style: none;
+}
+#submit_button:hover {
+    background-color: #7a60b9;
+    border-color: black;
+    border-style: solid;
+    border-width: 3px;
+    color: #dcdcdc;
+}
+#task_list_container {
+    background-color: lightgray;
+    width: 500px;
+    height: 500px;
+    margin-top: 20px;
+    border-radius: 30px;
+    text-align: left;
+}
+li {
+    color: black;
+    font-size: x-large;
+}
+#task_list button {
+    background-color: #9370DB;
+    color: white;
+    margin: 5px;
+    border-radius: 100%;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    cursor: pointer;
+    border-style: solid;
+    border-color: black;
+}
+#task_list button:hover {
+    background-color: white;
+    color: black;
+    border-color: black;
+    border-style: solid;
+    border-width: 3px;
+}
