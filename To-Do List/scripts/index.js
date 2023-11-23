@@ -1,3 +1,5 @@
+// TODO: Add local storage so that if page refreshes then it won't delete their list.
+
 const inputBox = document.querySelector("#input_box")
 const submitButton = document.querySelector("#submit_button");
 const lists = document.querySelector("#task_list");
