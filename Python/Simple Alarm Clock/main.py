@@ -5,6 +5,7 @@
 # - When it hits the users time, alert the user with a message or sound
 
 from datetime import datetime
+import time
 
 def main():
     usersTime = input("When should the alarm clock go off (HH:MM AM/PM)?: ")
@@ -13,6 +14,7 @@ def main():
         alarm_time = datetime.strptime(usersTime, "%I:%M %p")
 
         while True:
+            time.sleep(1)
             now = datetime.now()
             
             if now.hour == alarm_time.hour and now.minute == alarm_time.minute:
