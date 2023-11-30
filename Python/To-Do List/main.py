@@ -4,7 +4,7 @@
 # - Needs a user input for what they want to do (DONE)
 # - Needs a user input to add a task (DONE)
 # - Needs user input to delete task (DONE)
-# - Needs user input to complete task
+# - Needs user input to complete task (DONE)
 
 global_list = []
 
@@ -60,7 +60,7 @@ def main():
             elif userInput == "4":
                 print("Thank you for using the To-Do List! Goodbye!")
                 break
-        except ValueError:
+        except:
             print("Invalid input.")
 
 main()
