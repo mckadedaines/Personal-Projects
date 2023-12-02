@@ -5,8 +5,14 @@
 # - AI will be based off a random number and depending on that number will result in getting 1 of the 3 options
 import random
 
+robotNum = random.randint(1,3)
+
+decisionList = ["Rock", "Paper", "Scissors"]
+
 def robotVsPlayer():
-    print("test")
+    global robotNum
+    global decisionList
+    
 
 # def playerVsPlayer():
 
