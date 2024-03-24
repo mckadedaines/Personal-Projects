@@ -20,7 +20,7 @@ class Character(pygame.sprite.Sprite):
     def __init__(self, sprite_sheet_path, sprite_width, sprite_height, columns):
         super().__init__()
         self.facing_right = True
-        self.sprite_sheet = pygame.image.load("./Fighting Game/pixel_art/Player/adventurer-v1.5-Sheet.png").convert_alpha()
+        self.sprite_sheet = pygame.image.load("./pixel_art/adventurer-v1.5-Sheet.png").convert_alpha()
         self.frames = self.load_frames(sprite_width, sprite_height, columns)
         self.current_frame = 0
         self.image = self.frames[self.current_frame]
@@ -130,8 +130,8 @@ class Character(pygame.sprite.Sprite):
             else:
                 self.state = self.IDLE
 
-player = Character("./Fighting Game/pixel_art/adventurer-v1.5-Sheet.png", 50, 37, columns=7)
-dirt_block = pygame.image.load("./Fighting Game/pixel_art/Main_Dirt_Block.png").convert_alpha()
+player = Character("./pixel_art/adventurer-v1.5-Sheet.png", 50, 37, columns=7)
+dirt_block = pygame.image.load("./pixel_art/Main_Dirt_Block.png").convert_alpha()
 clock = pygame.time.Clock()
 
 def draw_platform(y_position, block_width_override=None):
